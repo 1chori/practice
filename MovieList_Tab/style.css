@@ -1,0 +1,162 @@
+.tab{
+    margin: auto;
+    max-width: 1200px;
+    height: 2000px;
+}
+
+.content{
+    display: flex;
+}
+
+.content input{
+    display: none;
+}
+
+.content label{
+    border: 1px solid rgba(128, 128, 128, 0.24);
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    line-height: 2.5;
+    cursor: pointer;
+}
+
+.content > input:checked + label{
+    border: 1px solid black;
+}
+
+.filter{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+ul{
+    padding: 0;
+    margin-top: 25px;
+    list-style: none;
+    height: 2000px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+li{
+    position: relative;
+    width: 230px;
+    margin-right: 60px;
+}
+
+.poster img{
+    width: 230px;
+    height: 331px;
+    
+}
+
+.des_movie{
+    background-color: black;
+    opacity: 80%;
+    color: white;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 20px 20px 160px 20px;
+    width: 190px;
+    height: 151px;
+    font-size: 14px;
+    display: none;
+    cursor: pointer;
+}
+
+.poster:hover .des_movie{
+    display: block;
+}
+
+.des_detail{
+    background-color: rgb(43, 42, 42);
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    line-height: 2.3;
+    position: absolute;
+    top: 260px;
+    left: 50px;
+    display: none;
+}
+
+.poster:hover .des_detail{
+    display: block;
+}
+
+.title_area{
+    display: flex;
+    width: 230px;
+    height: 50px;
+}
+
+.movie_grade_12 img{
+    width: 23px;
+    background-size: cover;
+}
+
+.movie_title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 7px;
+}
+
+.open_date p{
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+span::after{
+    content: '';
+    border: 1px solid;
+    opacity: 20%;
+    height: 12px;
+    margin: 0 10px;
+}
+
+.user_btn{
+    display: flex;
+}
+
+.user_btn .heart{
+    border: 1px solid rgba(128, 128, 128, 0.281);
+    border-radius: 5px;
+    width: 74px;
+    height: 36px;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.heart:hover{
+    background-color: rgb(221, 230, 230);
+}
+
+.user_btn .purple{
+    background-color: rgb(60, 37, 189);
+    border: 1px solid rgb(60, 37, 189);
+    color: white;
+    border-radius: 5px;
+    width: 74px;
+    height: 36px;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.purple:hover{
+    background-color: rgb(45, 18, 143);
+}

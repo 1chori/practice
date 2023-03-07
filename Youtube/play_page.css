@@ -1,0 +1,286 @@
+
+
+.title p{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: math;
+    font-weight: bold;
+}
+
+img{
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.channel{
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: math;
+    margin-left: 52px;
+    margin-top: -46px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.des_channel{
+    background-color: rgb(73, 70, 70);
+    color: white;
+    opacity: 80%;
+    border: 0;
+    width: 142px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 13px;
+    position: absolute;
+    left: 106px;
+    top: 498px;
+    text-align: center;
+    line-height: 2.5;
+    display: none;
+}
+
+.channel:hover .des_channel{
+    display: block;
+}
+
+.channel_mem p{
+    margin: 0;
+    font-size: 13px;
+    color: gray;
+    margin-left: 52px;
+}
+
+.subscribe{
+    background-color: black;
+    color: white;
+    opacity: 80%;
+    border: 0;
+    width: 60px;
+    height: 36px;
+    border-radius: 18px;
+    font-size: 14px;
+    position: absolute;
+    left: 225px;
+    top: 560px;
+    cursor: pointer;
+}
+
+.subscribe:hover{
+    background-color: rgb(46, 45, 45);
+}
+
+.subscribe:active{
+    background-color: black;
+    opacity: 80%;
+}
+
+.more_info{
+    background-color: black;
+    color: white;
+    opacity: 80%;
+    border: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    position: absolute;
+    left: 860px;
+    top: 560px;
+    cursor: pointer;
+}
+
+.more_info:hover{
+    background-color: rgb(46, 45, 45);
+}
+
+.more_info:active{
+    background-color: black;
+    opacity: 80%;
+}
+
+.save .save_bt{
+    background-color: black;
+    color: white;
+    opacity: 80%;
+    border: 0;
+    width: 108px;
+    height: 36px;
+    border-radius: 18px;
+    position: absolute;
+    left: 745px;
+    top: 560px;
+    cursor: pointer;
+}
+
+.save .save_bt:hover{
+    background-color: rgb(46, 45, 45);
+}
+
+.save .save_bt:active{
+    background-color: black;
+    opacity: 80%;
+}
+
+.des_save{
+    background-color: rgb(85, 83, 83);
+    color: white;
+    border: 0;
+    width: 84px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 11px;
+    position: absolute;
+    left: 755px;
+    top: 510px;
+    text-align: center;
+    line-height: 2.8;
+    display: none;
+}
+
+.save:hover .des_save{
+    display: block;
+}
+
+.share .share_bt{
+    background-color: black;
+    color: white;
+    opacity: 80%;
+    border: 0;
+    width: 69px;
+    height: 36px;
+    border-radius: 18px;
+    position: absolute;
+    left: 670px;
+    top: 560px;
+    cursor: pointer;
+}
+
+.share .share_bt:hover{
+    background-color: rgb(46, 45, 45);
+}
+
+.share .share_bt:active{
+    background-color: black;
+    opacity: 80%;
+}
+
+.des_share{
+    background-color: rgb(85, 83, 83);
+    color: white;
+    border: 0;
+    width: 45px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 11px;
+    position: absolute;
+    left: 678px;
+    top: 510px;
+    text-align: center;
+    line-height: 2.8;
+    display: none;
+}
+
+.share:hover .des_share{
+    display: block;
+}
+
+.bad_btn{
+    background-color: black;
+    color: white;
+    opacity: 80%;
+    border: 0;
+    width: 53px;
+    height: 36px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    position: absolute;
+    left: 610px;
+    top: 560px;
+    cursor: pointer;
+}
+
+.bad_btn:hover{
+    background-color: rgb(46, 45, 45);
+}
+
+.bad_btn:active{
+    background-color: black;
+    opacity: 80%;
+}
+
+.des_bad{
+    background-color: rgb(85, 83, 83);
+    color: white;
+    border: 0;
+    width: 210px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 11px;
+    position: absolute;
+    left: 505px;
+    top: 510px;
+    text-align: center;
+    line-height: 2.8;
+    display: none;
+}
+
+.bad:hover .des_bad{
+    display: block;
+}
+
+.good_btn{
+    background-color: black;
+    color: white;
+    opacity: 80%;
+    border: 0;
+    width: 53px;
+    height: 36px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    position: absolute;
+    left: 557px;
+    top: 560px;
+    cursor: pointer;
+}
+
+.good_btn:hover{
+   background-color: rgb(46, 45, 45);
+}
+
+.good_btn::after{
+    content: "";
+    background-color: rgba(189, 188, 188, 0.521);
+    position: absolute;
+    right: 0;
+    top: 6px;
+    height: 24px;
+    width: 1px;
+}
+
+.good_btn:active{
+    background-color: black;
+    opacity: 80%;
+}
+
+.des_good{
+    background-color: rgb(85, 83, 83);
+    color: white;
+    border: 0;
+    width: 160px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 11px;
+    position: absolute;
+    left: 477px;
+    top: 510px;
+    text-align: center;
+    line-height: 2.8;
+    display: none;
+}
+
+.good:hover .des_good{
+    display: block;
+}

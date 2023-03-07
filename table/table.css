@@ -1,0 +1,44 @@
+ul{
+    width: 850px;
+    clear: left;
+}
+
+ul li{
+    list-style: none;
+    border: 1px solid;
+    text-align: center;
+    float: left;
+    height: 24px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.number{
+    width: 80px;
+}
+
+.file{
+    width: 110px;
+}
+
+.title{
+    width: 240px;
+}
+
+.date{
+    width: 180px;
+}
+
+.view{
+    width: 110px;
+}
+
+.bottom_line{
+    border-bottom: 0;
+}
+
+.right_line{
+    border-right: 0;
+}
