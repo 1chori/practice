@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    height: 7300px;
+    width: 1519.2px;
+}
+
+*{
+    scroll-margin-top: 100px;
+}
+
+.top_bar{
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    position: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.top_bar .title{
+    margin: 0;
+    font-size: 14px;
+    margin-left: 15px;
+    overflow: hidden;
+    width: 270px;
+    height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.top_bar .title:hover{
+    background-color: rgba(184, 179, 179, 0.24);
+    cursor: pointer;
+}
+
+.top_bar .search{
+    font-size: 14px;
+    position: absolute;
+    right: 66px;
+    height: 30px;
+    text-align: right;
+    line-height: 2.2;
+}
+
+.search img{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    right: 32px;
+}
+
+.top_bar .search:hover{
+    background-color: rgba(184, 179, 179, 0.24);
+    cursor: pointer;
+}
+
+.top_bar .ctrlv{
+    font-size: 14px;
+    position: absolute;
+    right: 20px;
+    height: 20px;
+}
+
+.top_bar .ctrlv:hover{
+    background-color: rgba(184, 179, 179, 0.24);
+    cursor: pointer;
+}
+
+.main_des{
+    width: 708px;    
+    height: 7300px;
+    /* display: flex; */
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 96px;
+    position: relative;
+}
+
+.logo{
+    height: 270px;
+}
+
+.logo .main_logo{
+    font-size: 80px;
+}
+
+.logo p{
+    margin-top: 90px;
+}
+
+.des_title{
+    width: 708px;
+    font-size: 40px;
+    font-size: 26px;
+}
+
+.des_title h2{
+    margin-top: 20px;
+}
+
+.we_made p{
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(243, 231, 215);
+    margin-top: 0px;
+}
+
+.we_made img{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(243, 231, 215);
+}
+
+.just_choice h2{
+    background-color: rgb(227, 207, 247);
+    margin-bottom: 10px;
+}
+
+.line{
+    border: 1px solid rgba(128, 128, 128, 0.151);
+    width: 708px;
+}
+
+
+.why_des div{
+    margin-bottom: 30px;
+}
+
+.position h3{
+    background-color: rgba(220, 182, 255, 0.24);
+    font-weight: bold;
+}
+
+.position img{
+    width: 708px;
+}
+
+.position p{
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 34px;
+    color: rgba(128, 128, 128, 0.877);
+}
+
+.red{
+    color: red;
+    background-color: rgba(128, 128, 128, 0.144);
+    border: none;
+    border-radius: 3px;
+    font-family: monospace;
+    display: inline-block;
+    height: 22px;
+    line-height: 1.7;
+}
+
+.bold{
+    font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.144);
+}
+
+.des_box{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.144);
+    border-radius: 5px;
+    height: 90px;
+    align-items: center;
+}
+
+.des_box img{
+    width: 21.6px;
+    height: 21.6px;
+}
+
+.des_box p{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.project_youtube{
+    display: flex;
+}
+
+.youtube_info{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 457px;
+    height: 80px;
+    padding: 12px 14px 14px 14px;
+}
+
+.youtube_info .title{
+    font-size: 14px;
+    margin: 0;
+}
+
+.youtube_info .descrip{
+    font-size: 11px;
+    color: rgba(128, 128, 128, 0.863);
+    margin-top: 9px;
+    margin-bottom: 7px;
+    overflow: hidden;
+    height: 31px;
+}
+
+.youtube_info .url{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.youtube_img img{
+    width: 250px;
+    height: 106px;
+    object-fit: cover;
+}
