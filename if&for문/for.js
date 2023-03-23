@@ -41,3 +41,22 @@ for(k = 0; k < arr.length; k++){
         }
     }
 }
+
+
+let items = ['item1','item2','item3'];
+let copy = [];
+
+for (let i = 0; i < items.length; i++) {
+    copy.push(items[i]);
+}
+console.log(copy);
+
+// items.forEach(function(item) {
+//     copy.push(item);
+// })
+// console.log(copy);
+
+const arr3 = [10, 20, 30];
+for (const item of arr3){
+    console.log(item); // 10, 20, 30 출력
+}
