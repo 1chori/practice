@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .swiper-wrap{
+            width: 500px;
+            height: max-content;
+            position: relative;
+            margin: auto;
+        }
+
+        .swiper{
+            width: 500px;
+            height: 500px;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            /* display: flex;
+            align-items: center;
+            justify-content: space-between; */
+        }
+        .swiper-list{
+            display: flex;
+            width: max-content;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            transition: 1s;
+        }
+
+        .swiper-box{
+            border: 1px solid;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            /* box-sizing : 박스의 크기를 어떤 것을 기준으로 계산할지 결정
+               border-box : 테두리를 기준으로 크기 결정 */
+            /* pointer-events: none; */
+        }
+
+        .prev, .next{
+            z-index: 1;
+            position: absolute;
+        }
+
+        .prev{
+            margin-left: 20px;
+            top: 50%;
+        }
+
+        .next{
+            margin-right: 20px;
+            top: 50%;
+            right: 0%;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-wrap">
+        <div class="swiper">
+            <span class="prev">이전</span>
+            <span class="next">다음</span>
+            <ul class="swiper-list">
+                <li class="swiper-box">1</li>
+                <li class="swiper-box">2</li>
+                <li class="swiper-box">3</li>
+                <li class="swiper-box">4</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lotto-box,
+        .lotto-box2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .lotto-box div,
+        .lotto-box2 div{
+            border: 5px solid;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="lotto-box"></div>
+    <button class="lotto-btn">로또 추첨</button>
+    <div class="lotto-box2"></div>
+</body>
+<script>
+    let lottoNum = [];
+    let lottoResult = [];
+    let lottoBtn = document.querySelector('.lotto-btn');
+
+    function init() {
+        for (let i = 1; i <= 45; i++) {
+            lottoNum.push(i);
+            let _div = document.createElement('div');
+            _div.className = 'item'+i;
+            _div.innerHTML = i;
+            document.querySelector('.lotto-box').append(_div);
+        } 
+    }
+    init();
+
+    lottoBtn.addEventListener('click',() => {
+        while (lottoResult.length < 6) {
+           let num = Math.ceil(Math.random()*45);
+           if (lottoResult.indexOf(num) === -1) {
+                lottoResult.push(num);
+                let resultNum = document.querySelector('.item'+num);
+                document.querySelector('.lotto-box2').append(resultNum);
+           }
+        }
+        let [text, text2, text3, text4, text5, text6] = lottoResult;
+        console.log(text, text2, text3, text4, text5, text6, '당첨번호');
+    })
+
+
+
+</script>
+</html>

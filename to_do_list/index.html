@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            width: 800px;
+            height: 80px;
+        }
+
+        li > div{
+            width: 150px;
+            height: 80px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <label for="">날짜</label>
+    <input type="text">
+    <label for="">시간</label>
+    <input type="text">
+    <label for="">할일</label>
+    <input type="text">
+
+    <button id="addBtn">추가</button>
+    <button id="deleteBtn">삭제</button>
+
+    <div id="_div"></div>
+</body>
+<script>
+    window.localStorage.clear();
+    function addList() {
+        let inputs = document.querySelectorAll('input');
+        let value = window.localStorage.getItem('to_do_list');
+        if (window.localStorage.length == 0) {
+            window.localStorage.setItem('to_do_list',`{"date" : "${inputs[0].value}", "time" : "${inputs[1].value}", "do" : "${inputs[2].value}"}`);
+        } else {
+            window.localStorage.setItem('to_do_list',value + "|" + `{"date" : "${inputs[0].value}", "time" : "${inputs[1].value}", "do" : "${inputs[2].value}"}`);
+        }
+        console.log(window.localStorage.getItem('to_do_list'));
+
+        // let _json = JSON.parse(window.localStorage.getItem('to_do_list'));
+        // console.log(_json);
+
+        render();
+    }
+
+    function deleteList() {
+        let _json = window.localStorage.getItem('to_do_list');
+        let inputs = document.querySelectorAll('input');
+        //let _ul = document.querySelector('ul');
+        let _li = document.querySelector('li');
+        let _div1 = document.querySelector('div');
+        let _div2 = document.querySelector('div');
+        let _div3 = document.querySelector('div');
+        let _div4 = document.querySelector('div');
+        let value = window.localStorage.getItem('to_do_list');
+        _li.remove(_div1,_div2,_div3);
+        //_ul.remove(_li);
+        _json.forEach(function (i) {
+            let _li = document.querySelector('li');
+            let _div1 = document.querySelector('div');
+            let _div2 = document.querySelector('div');
+            let _div3 = document.querySelector('div');
+            let _div4 = document.querySelector('div');
+            _div1.innerHTML = JSON.parse(i).date;
+            _div2.innerHTML = JSON.parse(i).time;
+            _div3.innerHTML = JSON.parse(i).do;
+            _li.remove(_div1,_div2,_div3);
+            _ul.remove(_li);
+        });
+        render();
+    }
+
+    function render() {
+        let _json = window.localStorage.getItem('to_do_list');
+
+        _json = _json.split('|');  // 문자열을 '|' 구분하여 배열로 변환
+        console.log(_json);
+        _div.innerHTML = '';
+        let _ul = document.createElement('ul');
+        let _li = document.createElement('li');
+        let _div1 = document.createElement('div');
+        let _div2 = document.createElement('div');
+        let _div3 = document.createElement('div');
+        let _div4 = document.createElement('div');
+        _div1.innerHTML = '날짜';
+        _div2.innerHTML = '시간';
+        _div3.innerHTML = '할일';
+        _div3.innerHTML = '삭제';
+        _li.style.display = 'flex';
+        _li.append(_div1,_div2,_div3);
+        _ul.append(_li);
+        _json.forEach(function(i) {
+            let _li = document.createElement('li');
+            let _div1 = document.createElement('div');
+            let _div2 = document.createElement('div');
+            let _div3 = document.createElement('div');
+            let _div4 = document.createElement('div');
+            _div1.innerHTML = JSON.parse(i).date;
+            _div2.innerHTML = JSON.parse(i).time;
+            _div3.innerHTML = JSON.parse(i).do;
+            _li.style.display = 'flex';
+            _li.append(_div1,_div2,_div3);
+            _ul.append(_li);
+        });
+        _div.append(_ul);
+    }
+
+    if (window.localStorage.length != 0) {
+        render();
+    }
+
+    addBtn.addEventListener('click',addList);
+    deleteBtn.addEventListener('click',deleteList);
+    
+</script>
+</html>

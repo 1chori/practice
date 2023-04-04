@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="title-bar">
+        <ul class="title-list">
+            <li class="title"><a href="#home">Charlie</a></li>
+            <li class="line-ani"><a href="#about-me-box">About</a></li>
+            <li class="line-ani2"><a href="#career-box">Career</a></li>
+            <li class="line-ani3"><a href="#skill-box">Project</a></li>
+            <a href="#contact-me"><li class="title-contact">Contact Me</li></a>
+        </ul>
+    </div>
+    <div id="home" class="home-text">
+        <p class="left">I'm</p>
+        <p class="strong-left">Jeong</p>
+        <p class="strong-right">Woncheol</p>
+        <p class="right">Interested in blockchain</p>
+    </div>
+    <div class="contents">
+        <div class="line"></div>
+        <section id="about-me-box">
+            <div id="about-me" class="reveal">
+                <ul>
+                    <li>ABOUT ME</li>
+                    <li class="my-info">Jeong Woncheol<br>pro4456@naver.com<br>010-1111-1111</li>
+                    <li class="my-img"><img src="./IMG_20200401_145639_069.jpg"></li>
+                </ul>
+            </div>
+        </section>
+        <div class="line2"></div>
+        <section id="career-box">
+            <div id="career" class="reveal">
+                <p class="career-title">Career</p>
+                <div class="career-info-group">
+                    <div class="career-info">
+                        <p class="when">2018.12 ~ 2020.01</p>
+                        <p class="what">Design<br>Engineer</p>
+                        <p class="how">Harness of Automobile</p>
+                    </div>
+                    <div class="career-info">
+                        <p class="when">2020.04 ~ 2020.06</p>
+                        <p class="what">Rental<br>Business</p>
+                        <p class="how">rent a camping equipment</p>
+                    </div>
+                    <div class="career-info">
+                        <p class="when">2020.06 ~ 2022.12</p>
+                        <p class="what">Rental<br>Business</p>
+                        <p class="how">rent a study room</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="line3"></div>
+        <section id="skill-box">
+            <div id="skill" class="reveal">
+                <p class="skill-title">Project</p>
+                <div class="accordion">
+                    <section>
+                        <a target="_blank" id="project1">
+                            <h1>Project 1 - Turn based Game</h1>
+                            <h1 class="plus">+</h1>
+                        </a>
+                        <p>턴제 방식의 간단한 게임을 개발했으며, 게임 중 일시정지 팝업창 구현.
+                            그리고 상점 페이지를 제작하여 생성자 함수를 사용하여 아이템들의 능력치를 표현하였고, 
+                            아이템 구매 시 돈이 감소하는 것과 캐릭터의 능력치가 올라가는 기능 구현</p>
+                    </section>
+                    <section>
+                        <a target="_blank" id="project2">
+                            <h1>Project 2</h1>
+                            <h1 class="plus">+</h1>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatum et in alias molestiae obcaecati eos dolorum eaque eum cupiditate reiciendis nobis praesentium dolores molestias, deserunt at esse? Veniam, qui.</p>
+                    </section>
+                    <section>
+                        <a target="_blank" id="project3">
+                            <h1>Project 3</h1>
+                            <h1 class="plus">+</h1>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatum et in alias molestiae obcaecati eos dolorum eaque eum cupiditate reiciendis nobis praesentium dolores molestias, deserunt at esse? Veniam, qui.</p>
+                    </section>
+                    <section>
+                        <a target="_blank" id="project4">
+                            <h1>Project 4</h1>
+                            <h1 class="plus">+</h1>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatum et in alias molestiae obcaecati eos dolorum eaque eum cupiditate reiciendis nobis praesentium dolores molestias, deserunt at esse? Veniam, qui.</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <div class="line4"></div>
+        <section id="contact-me" class="reveal">
+            <p class="contactMe-title">Contact Me</p>
+            <div class="contact-area">
+                <div class="enter-link">
+                    <span>Here! Go to my blog or my Github<br>to see my projects in detail.<br>Or do you have a question? please email me.</span>
+                    <div class="link-img">
+                        <a href="https://www.notion.so/55d01bcbd70e4d6fb1802a05648b405e?v=ff91397053444a418169798e4509b944&pvs=4" target="_blank">
+                            <div class="notion-text">
+                                <img class="notion" src="./lbj_notion_0.png">
+                                <span>My Blog</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/1chori" target="_blank">
+                            <div class="github-text">
+                                <img class="github" src="./github.png">
+                                <span>My Github</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="Client-info">
+                    <label for="name">Name*</label>
+                    <textarea name="name" id="name" cols="20" rows="1"></textarea>
+                    <label for="">Email*</label>
+                    <textarea name="Email" id="email" cols="20" rows="1"></textarea>
+                    <label for="">Message*</label>
+                    <textarea name="message" id="message" cols="20" rows="10"></textarea>
+                    <p class="submit">submit</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
